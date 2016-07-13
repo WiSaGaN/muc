@@ -1,6 +1,6 @@
 # muc
 
-muc is a Rust program to test UDP multicast data.
+muc is a test client for UDP multicast.
 
 ### Installation
 
