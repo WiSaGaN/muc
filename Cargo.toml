@@ -1,6 +1,6 @@
 [package]
 name = "muc"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Wangshan Lu <wisagan@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -9,7 +9,6 @@ description = """
 A test client for UDP multicast
 """
 keywords = ["multicast"]
-
 
 [dependencies]
 net2 = "0.2"
