@@ -11,4 +11,5 @@ A test client for UDP multicast
 keywords = ["multicast"]
 
 [dependencies]
+chrono = "0.4"
 net2 = "0.2"

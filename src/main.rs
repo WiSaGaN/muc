@@ -1,3 +1,4 @@
+extern crate chrono;
 extern crate net2;
 
 use net2::UdpBuilder;
@@ -21,6 +22,7 @@ fn main() {
     let mut buffer = [0u8; 1600];
     loop {
         let (size, addr) = socket.recv_from(&mut buffer).expect("cannot recv");
-        println!("({} bytes from {}){:?}", size, addr, &buffer[..size]);
+        let now = chrono::Local::now();
+        println!("{}, {} bytes from {}, {:?}", now, size, addr, &buffer[..size]);
     }
 }
